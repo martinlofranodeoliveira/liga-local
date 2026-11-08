@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liga-local"
+version = "0.1.0"
+description = "Calendário e tabela de campeonatos de pontos corridos para pequenos grupos"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "LOFRANO TECNOLOGIA"}]
+keywords = ["campeonato", "pontos-corridos", "calendario", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "Natural Language :: Portuguese (Brazilian)",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://lofranotecnologia.com.br/"
+Repository = "https://github.com/martinlofranodeoliveira/liga-local"
+Issues = "https://github.com/martinlofranodeoliveira/liga-local/issues"
+
+[project.scripts]
+liga-local = "liga_local.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
